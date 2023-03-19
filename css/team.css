@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gentium+Book+Basic:wght@400;700&family=Josefin+Sans:wght@100&display=swap');
+
+::selection{
+    background: red;
+}
+:root{
+    --arvo :  'Josefin Sans', sans-serif;
+    --roman : Georgia, 'Times New Roman', Times, serif;
+    --primary :#FFFFFF;
+    --secondary : #EBEBEB;
+    --abang : #FF0000;
+
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    width: 100%;
+    height:auto;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+header .container-icon{
+    display: flex;
+    
+    margin-left: 1rem
+}
+header .container-icon p{
+    color:white;
+    font-size: 2.5rem;
+    font-family: var(--secondary)
+}
+
+header .container-menu{
+    display: flex;
+    margin-right: 1rem;
+}
+header .container-menu ul,header .container-shop ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header .container-menu ul li,header .container-shop ul li{
+    color: white;
+    margin-left: 2rem;
+    font-family: var(--roman);
+    font-size: 1.2rem;
+}
+header .container-shop{
+    margin-right: 1rem;
+}
+header .container-shop ul li:nth-child(4){
+    display: none;
+}
+
+.overlay{
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    transition: 1s ease-in;
+}
+.overlay a{
+    color: black;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.overlay ul li{
+    margin-top: 2rem;
+    position: relative;
+}
+
+.overlay ul li a{
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.overlay:target{
+    top: 0;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    width:20rem;
+    background: var(--secondary);
+}
+
+#awal{
+    width: 100%;
+    
+    height: 20rem;
+    background: url(../img/koki3\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+#awal .container{
+    width: 60%;
+    display: block;
+    margin:8rem auto;
+}
+#awal .container h2,
+#awal .container p{
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+#kedua{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#kedua .container{
+    width: 90%;
+    height: 100%;
+}
+
+#kedua .container .wrapper{
+    width: 100%;
+    height:100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#kedua .container .wrapper .konten{
+    width: 45%;
+    height:17rem;
+    padding: 0.8rem;
+}
+
+#kedua .container .wrapper .konten1{
+    width: 45%;
+    height: auto;
+}
+#kedua .container .wrapper .konten div{
+    width: 70%;
+    background: url(../img/MG_20230116_182131_560.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#kedua .container .wrapper .konten1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#kedua .container .wrapper .konten1 h2{
+    text-align: center;
+    overflow-y: hidden;
+}
+
+#kedua .container .wrapper .konten1 p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#kedua .container .wrapper .konten1 h6{
+    overflow-y: hidden;
+    font-size: 1.2rem;
+}
+
+
+#kedua .container .wrapper:nth-child(2){
+    flex-direction: row-reverse;
+    border-bottom: none;
+}
+
+#kedua .container .wrapper:nth-child(2) .konten div{
+    background: red;
+}
+
+#ketiga{
+    width: 100%;
+    height: 20rem;
+    overflow-y: hidden;
+    margin-top: 1rem;
+}
+#ketiga .container{
+    width: 80%;
+    overflow-y: hidden;
+    height: 100%;
+    background: var(--secondary);
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+#ketiga .container button{
+    margin: auto;
+    font-size: 1.2rem;
+    width: 10rem;
+    height: 2.4rem;
+    border-radius: 0.8rem;
+    transition: 0.8s;
+}
+
+#ketiga .container button:hover{
+    background: gray;
+    color: var(--primary);
+}
+
+#ketiga .container h3{
+    text-align: center;
+    overflow-y: hidden;
+    margin-bottom: 2rem;
+}
+
+#footer{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#footer .container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+#footer .container .wrapper3{
+    width: 100%;
+    height:auto;
+    background-color: black;
+
+}
+#footer .container .wrapper3 .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#footer .container .wrapper3 .item{ 
+    width: 30%;
+    position: relative;
+    height: auto;
+    margin-top: 7rem;
+    color: white;
+}
+
+#footer .container .wrapper3 .item h1{
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+    text-align: center;
+}
+
+#footer .container .wrapper3 .item p{
+    font-size: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input{
+    width: 75%;
+    height: 3rem;
+    background-color: var(--secondary);
+    color: black;
+    display: block;
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input::placeholder{
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content:center;
+}
+
+#footer .container .wrapper3 .item ul li{
+    margin: 1rem 1rem 0 1rem ;
+}
+
+#footer .container .wrapper3 .item img{
+    display: block;
+    margin:1rem auto;
+}
+
+#footer .container .wrapper3 .container2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8rem 0 0 0 ;
+    justify-content: center;
+}
+
+#footer .container .wrapper3 .container2 ul li{
+    color:  gold;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+
+}
+
+#footer .container .wrapper3 .container2 p{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-family: var(--arvo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:600px){
+    
+    #kedua{
+        height: auto;
+    }
+    #kedua .container .wrapper .konten{
+        width: 70%;
+        height: 15rem;
+    }
+    #kedua .container .wrapper .konten1{
+        height: auto;
+        width: 70%;
+    }
+    #kedua .container .wrapper .konten div{
+        width: 100%;
+        height: 90%;
+    }
+    
+#kedua .container .wrapper:nth-child(2){
+    flex-direction: row;
+}
+    
+#kedua .container .wrapper .konten1 h6{
+    font-size: 1rem;
+    text-align: center;
+}
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+    
+
+}
+#footer .container .wrapper3 .item ul li{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+#footer .container .wrapper3 .item{
+    width: 70%;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    #kedua .container .wrapper .konten div{
+        width: 100%;
+        height: 90%;
+    }
+    
+#kedua .container .wrapper .konten1 h6{
+    font-size: 1rem;
+}
+
+#footer .container .wrapper3 .item{
+    width: 49%;
+}
+}
+
+
+
+@media screen and (max-width:900px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header .container-menu{
+        display: none;
+    }
+    header .container-shop ul li:nth-child(4){
+    display: flex;       
+    }
+
+}
+
+
+@media screen and (min-width:900px) and (max-width:1200px){
+    header{
+        justify-content: center;
+    }
+    #kedua .container .wrapper .konten div{
+        width: 100%;
+        height: 90%;
+    }
+    
+#kedua .container .wrapper .konten1 h6{
+    font-size: 1rem;
+}
+}

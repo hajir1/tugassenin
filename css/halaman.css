@@ -1,0 +1,599 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gentium+Book+Basic:wght@400;700&family=Josefin+Sans:wght@100&display=swap');
+
+::selection{
+    background: red;
+}
+:root{
+    --arvo :  'Josefin Sans', sans-serif;
+    --roman : Georgia, 'Times New Roman', Times, serif;
+    --primary :#FFFFFF;
+    --secondary : #EBEBEB;
+    --abang : #FF0000;
+
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    width: 100%;
+    height:auto;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+header .container-icon{
+    display: flex;
+    
+    margin-left: 1rem
+}
+header .container-icon p{
+    color:white;
+    font-size: 2.5rem;
+    font-family: var(--secondary)
+}
+
+header .container-menu{
+    display: flex;
+    margin-right: 1rem;
+}
+header .container-menu ul,header .container-shop ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header .container-menu ul li,header .container-shop ul li{
+    color: white;
+    margin-left: 2rem;
+    font-family: var(--roman);
+    font-size: 1.2rem;
+}
+header .container-shop{
+    margin-right: 1rem;
+}
+header .container-shop ul li:nth-child(4){
+    display: none;
+}
+
+.overlay{
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    transition: 1s ease-in;
+}
+.overlay a{
+    color: black;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.overlay ul li{
+    margin-top: 2rem;
+    position: relative;
+}
+
+.overlay ul li a{
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.overlay:target{
+    top: 0;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    width:20rem;
+    background: var(--secondary);
+}
+
+#awal{
+    width: 100%;
+    
+    height: 20rem;
+    background: url(../img/koki3\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+#awal .container{
+    width: 60%;
+    display: block;
+    margin:8rem auto;
+
+}
+
+#kedua .container{
+    width: 80%;
+    height: auto;
+}
+#awal .container h2,
+#awal .container p{
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+#kedua .container .wrapper{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+#kedua .container .wrapper h3,
+#kedua .container .wrapper p{
+    text-align: center;
+    overflow-y: hidden;
+    color: black;
+    margin-top: 1rem;
+    text-transform: lowercase;
+    font-family: var(--arvo);
+}
+
+#kedua .container .wrapper p{
+    font-size: 1.2rem;
+}
+#kedua .container .wrapper1{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#kedua .container .wrapper1 img{
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.8rem;
+    background-repeat: no-repeat;
+}
+#kedua .container .wrapper2{
+    background-color:var(--secondary);
+    width: 100%;
+    border-radius: 1.4rem;
+    position: relative;
+    left: 5%;
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px var(--secondary);
+    justify-content: space-evenly;
+}
+
+#kedua .container .wrapper2 .box{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4rem;
+
+}
+
+#kedua .container .wrapper2 .box i{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#kedua .container .wrapper2 .box h5{
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    font-family: var(--arvo);
+    font-weight: bold;
+}
+
+#kedua .container .wrapper2 .box p{
+    font-family: var(--arvo);
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+}
+
+
+#ketiga{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#ketiga .cc{
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    background: url(../img/halaman2.1.png);
+    background-size: cover;
+}
+
+#ketiga .cc h1{
+    text-align: center;
+    color: white;
+    overflow-y: hidden;
+
+}
+#ketiga .cc .container{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#ketiga .container .box{
+    width: 35%;
+    height: 50%;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#ketiga .container .box .wrapper{
+    display: flex;
+    align-items: baseline;
+}
+#ketiga .container .box i{
+    color: var(--primary);
+    margin-right: 1rem;
+}
+
+#ketiga .container .box h2{
+    color: #EBEBEB;
+    overflow-y: hidden;
+}
+#ketiga .container .box p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+#ketiga .container .box a{
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+#keempat{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+
+#keempat h1{
+    overflow-y: hidden;
+    text-align: center;
+}
+
+#keempat .container{
+    width: 85%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+#keempat .container .wrapper{
+    width: 35%;
+    height: auto;
+}
+
+#keempat .container .wrapper .wrapper-top ul{
+    display: flex;
+    justify-content: center;
+}
+
+#keempat .container .wrapper .wrapper-top ul li{
+    margin:0.4rem;
+    font-size: 1.6rem;
+}
+
+#keempat .container .wrapper .wrapper-bottom p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--abang);
+}
+
+#keempat .container .wrapper .wrapper-bottom h6{
+ text-align: center;
+ overflow-y: hidden;
+}
+#kelima{
+    width: 100%;
+    height: auto;
+}
+
+#kelima .container{
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    background: url(../img/halaman2\ .3.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#kelima .container button{
+    width: 12rem;
+    border-radius: 1rem;
+    height: 3rem;
+    background:var(--secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: 0.6s ;
+}
+#kelima .container button:hover{
+    color: white;
+    background: black;
+}
+
+
+
+#footer{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#footer .container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+#footer .container .wrapper3{
+    width: 100%;
+    height:auto;
+    background-color: black;
+
+}
+#footer .container .wrapper3 .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#footer .container .wrapper3 .item{ 
+    width: 30%;
+    position: relative;
+    height: auto;
+    margin-top: 7rem;
+    color: white;
+}
+
+#footer .container .wrapper3 .item h1{
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+    text-align: center;
+}
+
+#footer .container .wrapper3 .item p{
+    font-size: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input{
+    width: 75%;
+    height: 3rem;
+    background-color: var(--secondary);
+    color: black;
+    display: block;
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input::placeholder{
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content:center;
+}
+
+#footer .container .wrapper3 .item ul li{
+    margin: 1rem 1rem 0 1rem ;
+}
+
+#footer .container .wrapper3 .item img{
+    display: block;
+    margin:1rem auto;
+}
+
+#footer .container .wrapper3 .container2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8rem 0 0 0 ;
+    justify-content: center;
+}
+
+#footer .container .wrapper3 .container2 ul li{
+    color:  gold;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+
+}
+
+#footer .container .wrapper3 .container2 p{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-family: var(--arvo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:600px) {
+
+    #kedua .container .wrapper1{
+        width: 100%;
+    }
+    
+#kedua .container .wrapper2{
+    height: auto;
+    left: 0;
+}
+#kedua .container .wrapper2 .box{
+    width: 70%;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#kedua .container .wrapper2 .box i{
+    font-size: 2rem;
+}
+#kedua .container .wrapper2 .box p{
+    text-align: center;
+}
+
+#ketiga .container .box{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+    
+
+}
+#footer .container .wrapper3 .item ul li{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+#footer .container .wrapper3 .item{
+    width: 70%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    
+#kedua .container .wrapper1{
+    width: 80%;
+}
+
+#kedua .container .wrapper2{
+    height: auto;
+    left: 0;
+}
+
+#kedua .container .wrapper2 .box{
+    width: 42%;
+    margin: 1rem;
+}
+
+#kedua .container .wrapper2 .box i{
+    font-size: 1.8rem;
+}
+
+#kedua .container .wrapper2 .box:nth-child(2) h5{
+    font-size: 0.8rem;
+}
+
+#keempat .container .wrapper{
+    width: 70%;
+}
+
+#footer .container .wrapper3 .item{
+    width: 45%;
+}
+}
+
+
+
+
+@media screen and (max-width:900px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header .container-menu{
+        display: none;
+    }
+    header .container-shop ul li:nth-child(4){
+    display: flex;       
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) and (max-width:1200px){
+    header{
+        justify-content: center;
+    }
+       
+#kedua .container .wrapper1{
+    width: 50%;
+}
+
+#kedua .container .wrapper2 .box{
+    width: 40%;
+}
+}

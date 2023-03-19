@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    font-family: monospace;
+}
+.logo img{
+    width: 12rem;
+    height: 12rem;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+
+.container{
+    width: 25rem;
+    display: block;
+    margin: auto;
+    height: 17rem;
+    border-radius: 5px;
+}
+
+.formShadow{
+    position: relative;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: medium;
+    box-shadow: 7px 7px;
+    text-align: center;
+}
+
+.formShadow p{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    text-align: center;
+}
+
+.textBox{
+    display: block;
+    margin: 1rem 0;
+    width: 95%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid;
+    background: #fff;
+    outline: none;
+    font-family: monospace;
+}
+
+.checkBox{
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.checkBox label{
+    padding-left: 5px;
+    letter-spacing: -1px;
+    font-family: monospace;
+}
+
+.checkBox a{
+    color: black;
+}
+
+.checkBox .requir{
+    color: red;
+    font-size: 15px;
+}
+
+.buttonShadow{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 125px;
+    height: 40px;
+    border: 1px solid black;
+    background: silver;
+    margin: 10px 10px 20px 10px;
+    border-radius: 7px;
+    box-shadow: 7px 7px;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.buttonShadow:hover{
+    box-shadow: 4px 4px;
+    cursor: pointer;
+}

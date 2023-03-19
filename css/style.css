@@ -1,0 +1,1026 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Gentium+Book+Basic:wght@400;700&family=Josefin+Sans:wght@100&display=swap');
+
+::selection{
+    background: red;
+}
+:root{
+    --arvo :  'Josefin Sans', sans-serif;
+    --roman : Georgia, 'Times New Roman', Times, serif;
+    --primary :#FFFFFF;
+    --secondary : #EBEBEB;
+    --abang : #FF0000;
+
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    width: 100%;
+    height:auto;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+header .container-icon{
+    display: flex;
+    
+    margin-left: 1rem
+}
+header .container-icon p{
+    color:white;
+    font-size: 2.5rem;
+    font-family: var(--secondary)
+}
+
+header .container-menu{
+    display: flex;
+    margin-right: 1rem;
+}
+header .container-menu ul,header .container-shop ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header .container-menu ul li,header .container-shop ul li{
+    color: white;
+    margin-left: 2rem;
+    font-family: var(--roman);
+    font-size: 1.2rem;
+}
+header .container-shop{
+    margin-right: 1rem;
+}
+header .container-shop ul li:nth-child(4){
+    display: none;
+}
+
+.overlay{
+    right: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    transition: 1s ease-in;
+}
+.overlay a{
+    color: black;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.overlay ul li{
+    margin-top: 2rem;
+    position: relative;
+}
+
+.overlay ul li a{
+    position: absolute;
+    font-size: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.overlay:target{
+    top: 0;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    width:20rem;
+    background: var(--secondary);
+}
+#awal{
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(../img/bg1.png);
+}
+#awal .container{
+    width: 100%;
+    height:70%;
+    position: relative;
+    top:20% ;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+#awal .container .wrapper1{
+    width: 40%;
+    height: 100%;
+    overflow-y: hidden;
+
+}
+#awal .container .wrapper1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#awal .container .wrapper h3{
+    color: white;
+    margin-top: 3rem;
+    font-family: var(--arvo);
+    font-size: 2.3rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-align: center;
+
+}
+#awal .container .wrapper  div{
+    display: flex;
+    justify-content:center;
+    margin-top: 3rem;
+}
+#awal .container .wrapper button{
+    width: 10rem;
+    height: 3rem;
+    background:var(--primary);
+    border-radius: 2rem;
+    transition: 0.7s ease;
+    margin: 1rem 1rem 1rem 0;
+    text-transform: uppercase;
+}
+
+#awal .container .wrapper button:hover{
+    background-color:black;
+    color: var(--primary);
+}
+#kedua{
+    width: 100%;
+    min-height: 35rem;
+    margin-top: 1rem;
+}
+#kedua .container-kedua{
+    width: 100%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:100%;
+    margin-bottom: 1rem;
+}
+
+#kedua .container-kedua .wrapper{
+    width: 29%;
+    margin:2rem 0 0 0;
+    height: 56%;
+    overflow-y: hidden;
+}
+
+#kedua .container-kedua .wrapper img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px var(--secondary);
+    background-position: bottom;
+    border-radius: 0.8rem;
+}
+
+#kedua .container-kedua .wrapper1{
+    width: 50%;
+    padding: 2rem;
+    height: auto;
+
+}
+#kedua .container-kedua .wrapper2{
+    background-color:var(--secondary);
+    width: 63%;
+    border-radius: 1.4rem;
+    position: relative;
+    left: 5%;
+    transform: translateY(-60%);
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px var(--secondary);
+    justify-content: space-evenly;
+}
+
+#kedua .container-kedua .wrapper2 .box{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4rem;
+
+}
+
+#kedua .container-kedua .wrapper2 .box:nth-child(2) h5{
+    font-size:0.8rem;
+}
+#kedua .container-kedua .wrapper2 .box i{
+    font-size: 1rem;
+}
+
+#kedua .container-kedua .wrapper2 .box h5{
+    margin-left: 0.4rem;
+    font-size: 1rem;
+    padding: 0.4rem;
+    font-family: var(--arvo);
+    font-weight: bold;
+}
+
+#kedua .container-kedua .wrapper2 .box p{
+    font-family: var(--arvo);
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+}
+#kedua .container-kedua .wrapper1 h2{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 3rem;
+    
+    overflow-y: hidden;
+}
+
+#kedua .container-kedua .wrapper1 p{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-family: var(--roman);
+    letter-spacing: 0.4px;
+}
+
+#kedua .container-kedua .wrapper1 h6{
+    color:red;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+    overflow-y: hidden;
+}
+
+#ketiga {
+    width: 100%;
+    height: auto;
+}
+#ketiga .container-ketiga{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+#ketiga .container-ketiga .item{
+    width: 35%;
+    height: 20rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#ketiga .container-ketiga .item:nth-child(1)  .box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-position: bottom;
+    transition: 1s ease;
+}
+#ketiga .container-ketiga .item:nth-child(2) .box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-position: bottom;
+    transition: 1s ease;
+}
+#ketiga .container-ketiga .item:nth-child(3) .box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/3.png);
+    background-size: cover;
+    background-position: bottom;
+    transition: 1s ease;
+}
+#ketiga .container-ketiga .item:nth-child(4) .box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/4.png);
+    background-size: cover;
+    background-position: bottom;
+    transition: 1s ease;
+}
+#ketiga .container-ketiga .item .box:hover{
+    transform: scale(1.2);
+}
+
+#ketiga .container-ketiga .item .garis{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+#ketiga .container-ketiga .item .garis h4{
+    font-size: 1.8rem;
+    font-family: var(--arvo);
+    text-align: center;
+    text-transform:capitalize;
+}
+
+#ketiga .container-ketiga .item .garis{
+    font-family: var(--arvo);
+    font-size:0.6rem;
+    text-align: center;
+}
+
+#ketiga .container-ketiga .item:nth-child(5){
+    display: block;
+    height: calc(100% - 5rem);
+   
+}
+.item .wrapper-top{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.item .wrapper-top i{
+    color: gold;
+    font-size: 1.2rem;
+}
+.item .wrapper-layout{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--arvo);
+    color: var(--abang);
+}
+
+.item p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    font-family: var(--roman);
+}
+#keempat{
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+}
+#keempat .container{
+    width: 100%;
+    height: 20rem;
+    background: url(../img/hal\ 5.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#kelima{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+#kelima .container{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#kelima .container .wrapper{
+    width: 55%;
+    height: auto;
+
+}
+
+#kelima .container .wrapper1{
+    height: 98%;
+    width: 45%;
+}
+#kelima .container .wrapper h1,
+#kelima .container .wrapper h5,
+#kelima .container .wrapper p{
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+#kelima .container .wrapper p{
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+    font-family: var(--arvo);
+}
+#kelima .container .wrapper h5{
+    color: var(--abang);
+    margin:0.2rem 0 2rem 0;
+}
+
+#kelima .container .wrapper{
+    font-family: var(--roman);
+}
+
+#kelima .container .wrapper1 div{
+    background-image: url(../img/p.png);
+    width: 65%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 0.8rem;
+}
+
+
+#footer .container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#footer .container .wrapper1{
+    width: 100%;
+    height: 17rem;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#footer .container .tengah{
+    display: flex;
+    width: 80%;
+    height: 8rem;
+    background: var(--secondary);
+    position: absolute;
+    border-radius: 0.8rem;
+    top: 22%;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    justify-content: space-between;
+}
+
+#footer .container .tengah .item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .container .tengah .item .box{
+    width: 30%;
+}
+
+#footer .container .tengah .item .box i{
+    font-size: 4rem;
+}
+
+#footer .container .tengah .item .box1{
+    width: 68%;
+}
+
+#footer .container .tengah .item .box1 h1{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: var(--arvo);
+}
+
+#footer .container .tengah .item .box1 h1 p{
+    font-size: 0.8rem;
+    font-family: var(--secondary);
+}
+#footer .container .wrapper2{
+    background-color: #BB0000;
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer .container .wrapper2 .item1{
+    width: 40%;
+    text-align: center;
+    font-family: var(--arvo);
+}
+#footer .container .wrapper2 .item2{
+    width: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+#footer .container .wrapper2 h1{
+    color: white;
+}
+
+#footer .container .wrapper2 h1 span{
+    position: relative;
+    left: 20%;
+}
+
+#footer .container .wrapper2 .item2 input{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem;
+}
+
+#footer .container .wrapper2 .item2 input::placeholder{
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+#footer .container .wrapper2 .item2 button{
+    width: 14rem;
+    height: 3rem;
+    
+    border-radius: 0.8rem;
+    background-color:black;
+    color: white;
+    transition: 0.8s ease;
+    border: none;
+}
+
+#footer .container .wrapper2 .item2 button:hover{
+    background-color: var(--secondary);
+    color: black;
+}
+#footer .container .wrapper3{
+    width: 100%;
+    height:auto;
+    background-color: black;
+
+}
+#footer .container .wrapper3 .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#footer .container .wrapper3 .item{ 
+    width: 30%;
+    position: relative;
+    height: auto;
+    margin-top: 7rem;
+    color: white;
+}
+
+#footer .container .wrapper3 .item h1{
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+    text-align: center;
+}
+
+#footer .container .wrapper3 .item p{
+    font-size: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input{
+    width: 75%;
+    height: 3rem;
+    background-color: var(--secondary);
+    color: black;
+    display: block;
+    margin: auto;
+    border-radius: 0.8rem;
+}
+
+#footer .container .wrapper3 .item input::placeholder{
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content:center;
+}
+
+#footer .container .wrapper3 .item ul li{
+    margin: 1rem 1rem 0 1rem ;
+}
+
+#footer .container .wrapper3 .item img{
+    display: block;
+    margin:1rem auto;
+}
+
+#footer .container .wrapper3 .container2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8rem 0 0 0 ;
+    justify-content: center;
+}
+
+#footer .container .wrapper3 .container2 ul li{
+    color:  gold;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    font-family: var(--arvo);
+
+}
+
+#footer .container .wrapper3 .container2 p{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-family: var(--arvo);
+}
+@media screen and (min-width:100px) and (max-width:650px) {
+    
+#kedua .container-kedua .wrapper1 p{
+    letter-spacing: normal;
+}
+
+#kedua .container-kedua .wrapper1 h2{
+    font-size: 1.2rem;
+}
+#kedua .container-kedua .wrapper2 .box{
+    width: 40%;
+}
+
+#kedua .container-kedua .wrapper2 .box p{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+#ketiga .container-ketiga .item{
+    width: 80%;
+    height: 18rem;
+}
+
+#kelima .container{
+    height:auto;
+}
+#kelima .container .wrapper{
+    width: 85%;
+    height: 10rem;
+}
+#kelima .container .wrapper1{
+    height: 10rem;
+    width: 80%;
+}
+#kelima .container .wrapper1 div{
+    width: 100%;
+    height: 100%;
+}
+#kelima .container .wrapper p{
+    letter-spacing: 1.2px;
+    line-height: normal;
+}
+
+#footer .container .tengah{
+    width: 100%;
+    height: auto;
+    background: var(--secondary);
+    position: relative;
+    margin: 0;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer .container .tengah .item{
+    width: 70%;
+}
+
+#footer .container .tengah .item .box{
+    width: 70%;
+    display:flex;
+    justify-content: center;
+}
+
+#footer .container .tengah .item .box i{
+    font-size: 1.8rem;
+}
+
+#footer .container .tengah .item .box h1{
+    font-size: 1rem;
+}
+
+#footer .container .wrapper2{
+    display: block;
+    height: auto;
+}
+
+#footer .container .wrapper2 .item1{
+    display: block;
+    margin: auto;
+}
+
+#footer .container .wrapper2 .item1 span{
+    left: 0;
+}
+#footer .container .wrapper2 .item2{
+    width: 100%;
+}
+
+#footer .container .wrapper3 .item ul{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+    
+
+}
+#footer .container .wrapper3 .item ul li{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+#footer .container .wrapper2 .item2 input,
+#footer .container .wrapper2 .item2 button{
+    width: 15rem;
+    display: block;
+    margin:0.8rem auto;
+}
+
+#footer .container .wrapper3 .item{
+    width: 70%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (min-width:651px) and (max-width:899px) {
+    
+#ketiga .container-ketiga .item{
+    width: 10%;
+    height: 18rem;
+}
+
+#ketiga .container-ketiga .item{
+    width: 45%;
+    height: 18rem;
+}
+
+#kelima .container{
+    height: auto;
+}
+#kelima .container .wrapper{
+    width: 70%;
+    height: 15rem;
+}
+#kelima .container .wrapper1{
+    width: 70%;
+    height: 15rem;
+}
+#kelima .container .wrapper p{
+    font-size: 1.3rem;
+}
+#kelima .container .wrapper1 div{
+    display: block;
+    margin: auto;
+}
+
+#footer .container .tengah{
+    width: 100%;
+    height:auto;
+    background: var(--secondary);
+    margin: 0;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#footer .container .tengah .item{
+    width: 40%;
+    height: auto;
+    
+}
+#footer .container .wrapper2{
+    position: relative;
+}
+#footer .container .wrapper2 .item2 input,
+#footer .container .wrapper2 .item2 button{
+    width: 10rem;
+    margin:0.8rem;
+}
+
+#footer .container .wrapper3 .item{
+    width: 45%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header .container-menu{
+        display: none;
+    }
+    header .container-shop ul li:nth-child(4){
+    display: flex;       
+    }
+    
+#awal .container{
+    display: block;
+    height:80%;
+    top: 5%;
+    flex-direction: column-reverse;
+}
+    
+#awal .container .wrapper1{
+    width: 70%;
+    height: 70%;
+    margin-top: 2rem;
+    display: block;
+    margin: auto;
+
+}
+
+#kedua .container-kedua .wrapper,
+#kedua .container-kedua .wrapper1{
+    width: 80%;
+    height: 70%;
+    overflow-y: hidden;
+    margin-bottom: 0.8rem;
+}
+
+#kedua .container-kedua .wrapper2{
+    position:relative;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 96%;
+    margin: 0;
+    height: auto;
+    text-align: center;
+    }
+    #kedua .container-kedua .wrapper2 .box{
+        height: auto;
+        
+    }
+    #kedua .container-kedua .wrapper2 .box i{
+        display: block;
+        margin: auto;
+    }
+#kedua .container-kedua .wrapper1 h2{
+    margin-top: 2rem;
+
+}
+#kedua .container-kedua .wrapper1 p{
+    font-size: 1.3rem;
+    letter-spacing: 0.6px;
+    margin:1rem 0;
+}
+
+#kedua .container-kedua .wrapper1 h6{
+    text-align: center;
+}
+
+#kelima .container .wrapper{
+    height: 30rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) and (max-width:1200px){
+    header{
+        justify-content: center;
+    }
+    
+#kedua .container-kedua .wrapper{
+    width: 40%;
+}
+
+#kedua .container-kedua .wrapper1 p{
+    line-height: 1.6rem;
+}
+
+#kedua .container-kedua .wrapper2{
+    transform: translateY(-1rem);
+}
+
+#ketiga .container-ketiga .item{
+    width: 45%;
+}
+
+#kelima .container{
+    height: 25rem;
+}
+#kelima .container .wrapper,
+#kelima .container .wrapper1{
+    width: 48%;
+}
+#kelima .container .wrapper p{
+    font-size: 1.2rem;
+}
+#kelima .container .wrapper1 div{
+    width: 100%;
+    height: 100%;
+}
+
+#footer .container .tengah{
+    width: 100%;
+    height:auto;
+    background: var(--secondary);
+    position: relative;
+    margin: 0;
+    border-radius: 0.8rem;
+    justify-content: center;
+}
+
+#footer .container .tengah .item{
+    width: 40%;
+}
+
+#footer .container .wrapper2 .item2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer .container .wrapper2 .item2 input{
+    margin: 0.4rem;
+}
+}
